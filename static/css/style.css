@@ -126,7 +126,7 @@ a:hover, a:visited, a:focus, a:active{
     display: inline-block;
     list-style: none;
 }
-.ukie-icons {
+.ferni-icons {
     display: inline-block;
     font-size: 16px;
     width: 36px;
@@ -138,10 +138,10 @@ a:hover, a:visited, a:focus, a:active{
     border-style: solid;
     border-width: 1px;
 }
-.ukie-icons:first-child{
+.ferni-icons:first-child{
     margin-left: 0px;
 }
-.ukie-icons:hover{
+.ferni-icons:hover{
 }
 .btn{
     border-style: solid;
@@ -404,11 +404,11 @@ a.icons-menu-button:focus,
 }
 .footer a{
 }
-.footer .ukie-icons{
+.footer .ferni-icons{
 }
 .footer a:hover{
 }
-.footer a:hover .ukie-icons{
+.footer a:hover .ferni-icons{
 }
 .footer .copyright{
 }
@@ -1296,4 +1296,9 @@ a.icons-menu-button:focus,
 }
 .visible{
     visibility: visible;
+}
+
+.within img {
+    width: 370px;
+    height: 370px;
 }

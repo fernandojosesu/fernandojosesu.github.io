@@ -19,12 +19,12 @@ body {
     /* background-color: #383231; */
     /* background-color: #ffffff; */
 }
-.ukie-icons {
+.ferni-icons {
     color: #ffffff;
     border-color: #492ca2;
     background-color: #7c4dff;
 }
-.ukie-icons:hover{
+.ferni-icons:hover{
     background-color: #492ca2;
     color: #ffffff;
 }
@@ -130,7 +130,7 @@ a.icons-menu-button:focus,
 .footer a{
     color: #000000;
 }
-.footer .ukie-icons{
+.footer .ferni-icons{
     border-color: #d6d6d6;
     background-color: #f5f5f5;
     color: #d6d6d6;
@@ -138,7 +138,7 @@ a.icons-menu-button:focus,
 .footer a:hover{
     color: #7c4dff;
 }
-.footer a:hover .ukie-icons{
+.footer a:hover .ferni-icons{
     border-color: #492ca2;
     background-color: #7c4dff;
     color: #ffffff;
