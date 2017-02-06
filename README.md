@@ -1,3 +1,3 @@
-# GentleGeek Studio
-- [GentleGeek Studio](http://www.gentlegeekstudios.com/) Portfolio Page.
+# Ferni IO
+- [Ferni IO](http://www.ferni.io/) Portfolio Page.
 - Previously known as FJDQ Designs.
