@@ -16,8 +16,7 @@ body {
   margin: -20em auto 0 auto;
 }
 
-/* ============================================== Candle
-*/
+/* Candle */
 
 .velas {
   background: #ffffff;
@@ -50,8 +49,7 @@ body {
   left: 0;
 }
 
-/* ============================================== Fire
-*/
+/* Fire */
 
 .fuego {
   border-radius: 100%;
@@ -78,8 +76,7 @@ body {
   animation: fuego 0.2s 6.5s infinite;
 }
 
-/* ============================================== Animation Fire
-*/
+/* Animation Fire */
 
 @keyframes fuego {
   0%,
@@ -103,13 +100,14 @@ body {
 
 .text {
   color: #8b6a60;
-  font-family: "Source Sans Pro";
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   padding: 0 1rem 1rem;
   text-align: center;
 }
 
 h1 {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.4em;
   font-weight: 900;
 }
