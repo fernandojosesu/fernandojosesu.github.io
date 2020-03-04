@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  background: #ee9ca7;
+ background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9); 
 }
 
 #cake {
@@ -103,11 +103,12 @@ body {
 
 .text {
   color: #8b6a60;
-  font-family: "Lato", sans-serif;
+  font-family: "Source Sans Pro";
   font-weight: 300;
   font-style: italic;
   text-align: center;
   h1 {
     font-size: 1.4em;
+    font-weight: 900;
   }
 }
