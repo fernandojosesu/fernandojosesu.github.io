@@ -1,113 +1,80 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
 
-html,
-body {
-  width: 100%;
-  height: 100%;
+body{
+ background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
 }
 
-body {
-  background: #ee9ca7;
+.container{
+ background-color:rgba(255,255,255,.67);
+ font-family: 'Abril Fatface', cursive;
 }
 
-#cake {
-  display: block;
-  position: relative;
-  margin: -10em auto 0 auto;
+h1{
+font-size:40px;
 }
 
-/* ============================================== Candle
-*/
-
-.velas {
-  background: #ffffff;
-  border-radius: 10px;
-  position: absolute;
-  top: 228px;
-  left: 50%;
-  margin-left: -2.4px;
-  margin-top: -8.33333333px;
-  width: 5px;
-  height: 35px;
-  transform: translateY(-300px);
-  backface-visibility: hidden;
-  animation: in 500ms 6s ease-out forwards;
-}
-.velas:after,
-.velas:before {
-  background: rgba(255, 0, 0, 0.4);
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2.22222222px;
-}
-.velas:after {
-  top: 25%;
-  left: 0;
-}
-.velas:before {
-  top: 45%;
-  left: 0;
+h2{
+font-size:31px;
 }
 
-/* ============================================== Fire
-*/
-
-.fuego {
-  border-radius: 100%;
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  margin-left: -2.6px;
-  width: 6.66666667px;
-  height: 18px;
-}
-.fuego:nth-child(1) {
-  animation: fuego 2s 6.5s infinite;
-}
-.fuego:nth-child(2) {
-  animation: fuego 1.5s 6.5s infinite;
-}
-.fuego:nth-child(3) {
-  animation: fuego 1s 6.5s infinite;
-}
-.fuego:nth-child(4) {
-  animation: fuego 0.5s 6.5s infinite;
-}
-.fuego:nth-child(5) {
-  animation: fuego 0.2s 6.5s infinite;
+h3{
+font-size:27px;
 }
 
-/* ============================================== Animation Fire
-*/
-
-@keyframes fuego {
-  0%,
-  100% {
-    background: rgba(254, 248, 97, 0.5);
-    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    background: rgba(255, 50, 0, 0.1);
-    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
-    transform: translateY(-20px) scale(0);
-  }
+p {
+font-size:23px;
 }
 
-@keyframes in {
-  to {
-    transform: translateY(0);
-  }
+.bal{ margin:20px;  text-align:center; }
+
+.balloon {
+  display:inline-block;
+   width:120px;
+  height:145px;
+  background:hsl(215,50%,65%);
+  border-radius:80%;
+  position:relative;
+  box-shadow:inset -10px -10px 0 rgba(0,0,0,0.07);
+  margin:20px 30px;
+  transition:transform 0.5s ease;
+  z-index:10;
+  animation:balloons 4s ease-in-out infinite;
+  transform-origin:bottom center;
 }
 
-.text {
-  color: #8b6a60;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  h1 {
-    font-size: 1.4em;
-  }
+@keyframes balloons {
+  0%,100%{ transform:translateY(0) rotate(-4deg); }
+  50%{ transform:translateY(-25px) rotate(4deg); }
 }
+
+.balloon:before {
+  content:"▲";
+  font-size:20px;
+  color:hsl(215,30%,50%);
+  display:block;
+  text-align:center;
+  width:100%;
+  position:absolute;
+  bottom:-12px;
+  z-index:-100;
+}
+
+.balloon:after {
+ display:inline-block; top:153px;
+  position:absolute;
+  height:250px;
+  width:1px;
+  margin:0 auto;
+  content:"";
+  background:rgba(0,0,0,0.2); 
+}
+
+.balloon:nth-child(2){ background:hsl(245,40%,65%); animation-duration:3.5s; }
+.balloon:nth-child(2):before { color:hsl(245,40%,65%);  }
+
+.balloon:nth-child(3){ background:hsl(139,50%,60%); animation-duration:3s; }
+.balloon:nth-child(3):before { color:hsl(139,30%,50%);  }
+.balloon:nth-child(4){ background:hsl(59,50%,58%); animation-duration:4.5s; }
+.balloon:nth-child(4):before { color:hsl(59,30%,52%);  }
+balloon:nth-child(5){ background:hsl(23,55%,57%); animation-duration:5s; }
+.balloon:nth-child(5):before { color:hsl(23,44%,46%);  }
