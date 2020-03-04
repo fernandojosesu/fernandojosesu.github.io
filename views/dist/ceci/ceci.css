@@ -20,3 +20,13 @@ h1 {
   -webkit-user-select: none;
   user-select: none;
 }
+
+p {
+  position: absolute;
+  top: 50%;
+  left: 33.5%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+}
