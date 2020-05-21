@@ -2198,14 +2198,14 @@ ul.social-links li:last-child a {
 ============================================================================= */
 /*===== v2.0.0 - 23 November 2018 =====*/
 /* Arrows Nav */
-.lmpixels-arrows-nav {
+.portfolio-arrows-nav {
   position: absolute;
   bottom: 10px;
   right: 15px;
   z-index: 100;
 }
 
-.lmpixels-arrows-nav > div {
+.portfolio-arrows-nav > div {
   display: inline-block;
   padding: 0;
   background-color: #fff;
@@ -2224,17 +2224,17 @@ ul.social-links li:last-child a {
   box-shadow: 0 0 14px 0 rgba(0,0,0,.12);
 }
 
-.lmpixels-arrows-nav > div:hover {
+.portfolio-arrows-nav > div:hover {
   -webkit-box-shadow: 0 0 25px 0 rgba(0,0,0,.22);
   -moz-box-shadow: 0 0 25px 0 rgba(0,0,0,.22);
   box-shadow: 0 0 25px 0 rgba(0,0,0,.22);
 }
 
-.lmpixels-arrows-nav > div:first-child {
+.portfolio-arrows-nav > div:first-child {
   margin-right: 1px;
 }
 
-.lmpixels-arrows-nav > div i {
+.portfolio-arrows-nav > div i {
   line-height: 40px;
   height: 40px;
   margin-top: -1px;
@@ -2247,17 +2247,17 @@ ul.social-links li:last-child a {
   transition: all 0.3s ease-in-out;
 }
 
-.lmpixels-arrows-nav > div:hover i {
+.portfolio-arrows-nav > div:hover i {
   color: #e5be24;
 }
 /* /Arrows Nav */
 @media only screen and (max-width: 768px) {
-  .lmpixels-arrows-nav > div {
+  .portfolio-arrows-nav > div {
     height: 32px;
     width: 32px;
   }
 
-  .lmpixels-arrows-nav > div i {
+  .portfolio-arrows-nav > div i {
     line-height: 32px;
     height: 32px;
     font-size: 32px;

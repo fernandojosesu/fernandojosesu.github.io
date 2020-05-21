@@ -1,10 +1,3 @@
-/*
-* Template Name: Unique - Responsive vCard Template
-* Author: lmpixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 2.1.0
-*/
-
 var PageTransitions = (function ($, options) {
 "use strict";
     var defaultStartPage = "home",
@@ -79,7 +72,7 @@ var PageTransitions = (function ($, options) {
 
         Animate(menuLink);
 
-        $(".lmpixels-arrow-right").click(function() {
+        $(".portfolio-arrow-right").click(function() {
             var activeItem = $('.site-main-menu li.active');
             activeItem.next("li").children("a").click();
             if ( activeItem.is(':last-child') ) {
@@ -87,7 +80,7 @@ var PageTransitions = (function ($, options) {
             }
         });
 
-        $(".lmpixels-arrow-left").click(function() {
+        $(".portfolio-arrow-left").click(function() {
             var activeItem = $('.site-main-menu li.active');
             activeItem.prev("li").children("a").click();
             if ( activeItem.is(':first-child') ) {
@@ -102,7 +95,7 @@ var PageTransitions = (function ($, options) {
     function getActiveSection() {
         if(location.hash === "") {
             return location.hash = defaultStartPage;
-        } 
+        }
         else {
             return location.hash;
         }
@@ -116,7 +109,7 @@ var PageTransitions = (function ($, options) {
         var navLink = $(item);
         navLink = navLink['0'];
         navLink = $(navLink.parentNode);
-            
+
         if(navLink) {
             $('ul.site-main-menu li').removeClass('active');
             navLink.addClass('active');
@@ -467,7 +460,7 @@ var PageTransitions = (function ($, options) {
             currentPageId = $pageWrapper.data('current'), tempPageIndex,
             linkhref = $pageTrigger.attr('href').split("#"),
             gotoPage = linkhref[1];
-            
+
             tempPageIndex = currentPageId;
 
             // Current page to be removed.
