@@ -27,7 +27,7 @@ try
         'Return-Path: ' . $from,
     );
 
-    mail($sendTo, $subject, $emailText, implode("\n", $headers));
+    mail($sendTo, $subject, $emailText, $headers);
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
